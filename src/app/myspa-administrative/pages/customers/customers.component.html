@@ -1,0 +1,98 @@
+<h1>Modulo de Clientes</h1>
+
+
+
+
+
+<div class="grid">
+  <div class="col-12">
+    <mat-card>
+      <mat-card-content>
+        <form class="grid" [formGroup]="customerForms" (ngSubmit)="onSubmit()">
+
+          <input  style="display: none;" formControlName="id" />
+          <input  style="display: none;" formControlName="password" />
+          <input  style="display: none;" formControlName="email" />
+
+          <mat-form-field class="col-12">
+            <mat-label>Nombre</mat-label>
+            <input matInput
+                  type="text"
+                  required
+                  formControlName="name" />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Dirección</mat-label>
+            <input matInput
+                  type="text"
+                  required
+                  formControlName="address"/>
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Usuario</mat-label>
+            <input matInput
+                  type="text"
+                  required
+                  formControlName="user" />
+          </mat-form-field>
+
+        </form>
+
+        <div class="flex justify-content-between md:col-6">
+<button mat-fab
+        color="warn"
+        matTooltip="Borrar cliente"
+        (click)="onDeleteCustomer()">
+  <mat-icon>delete</mat-icon>
+</button>
+<button mat-fab
+        color="primary"
+        matTooltip="Guardar cliente"
+        (click)="onSubmit()">
+  <mat-icon>save</mat-icon>
+</button>
+    </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>
+
+
+
+
+<mat-divider></mat-divider>
+
+<div class="grid">
+<div class="col-12">
+  <table >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Usuario</th>
+        <th>Dirección</th>
+        <th>Seleccionar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+      *ngFor="let customers of customers">
+        <td>{{ customers.id }}</td>
+            <td>{{ customers.name }}</td>
+            <td>{{ customers.user }}</td>
+            <td>{{ customers.address }}</td>
+            <td><button
+              (click)="selectCustomer(customers)"
+              mat-fab color="primary">
+              <mat-icon>publish</mat-icon>
+            </button>
+    </tbody>
+  </table>
+
+</div>
+</div>
+

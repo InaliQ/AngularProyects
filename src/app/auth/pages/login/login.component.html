@@ -1,0 +1,31 @@
+<div class="grid p-3 col-12 mt-5 md:col-6 md:col-offset-3" layout="row" layout-align="center center" layout-fill>
+
+  <div class="flex flex-column" layout="column">
+
+    <span class="text-lg mb-4">Login</span>
+
+    <div class="mb-2" layout="row">
+      <mat-form-field>
+        <mat-label for="usuario" flex="nogrow">Usuario:</mat-label>
+        <input type="text" matInput id="usuario" placeholder="Nombre de usuario" flex>
+      </mat-form-field>
+    </div>
+
+    <div class="mb-2" layout="row">
+      <mat-form-field>
+        <mat-label for="contraseña" flex="nogrow">Contraseña:</mat-label>
+        <input type="password" matInput id="contraseña" placeholder="Contraseña" flex>
+      </mat-form-field>
+    </div>
+    <button
+    (click)="onLogin()"
+     mat-button mat-flat-button color="primary">
+      <mat-icon>save</mat-icon>
+      Ingresar
+    </button>
+
+    <div class="flex justify-content-end mt-5"></div>
+    <a routerLink="/register">Registrate Uwu</a>
+  </div>
+
+</div>

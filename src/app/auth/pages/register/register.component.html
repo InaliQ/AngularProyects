@@ -1,0 +1,57 @@
+<div fxLayout="row" fxLayoutAlign="center center" style="height: 100vh">
+  <div class="grid p-3 col-12 mt-5 md:col-6 md:col-offset-3">
+    <div class="flex flex-column" layout="column">
+      <span class="text-lg mb-4">Register</span>
+
+      <div class="mb-2" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Nombre:</mat-label>
+          <input type="text" matInput name="nombre" id="nombre">
+        </mat-form-field>
+      </div>
+
+      <div class="mb-2" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Dirección:</mat-label>
+          <input type="text" matInput name="direccion" id="direccion">
+        </mat-form-field>
+      </div>
+
+      <div class="mb-2" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Usuario:</mat-label>
+          <input type="text" matInput name="usuario" id="usuario">
+        </mat-form-field>
+      </div>
+
+      <div class="mb-2" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Contraseña:</mat-label>
+          <input type="password" matInput name="contrasena" id="contrasena">
+        </mat-form-field>
+      </div>
+
+      <div class="mb-2" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Confirmar Contraseña:</mat-label>
+          <input type="password" matInput name="confirmar_contrasena" id="confirmar_contrasena">
+        </mat-form-field>
+      </div>
+
+      <div class="mb-2" fxLayout="row">
+        <mat-form-field>
+          <mat-label>Correo Electrónico:</mat-label>
+          <input type="email" matInput name="correo" id="correo">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <button mat-button mat-flat-button color="primary">
+      <mat-icon>save</mat-icon>
+      Crear Cuenta
+    </button>
+
+  </div>
+  <div class="flex justify-content-end mt-5"></div>
+    <a routerLink="/login">Inicia secion Owo</a>
+</div>

@@ -1,0 +1,152 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ulises",
+      "address": "Juan Nuñez de Cedeña",
+      "user": "Inali",
+      "password": "InaliQ01",
+      "email": "inali@gmail.com",
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Simon",
+      "address": "Hacieda Arriba",
+      "user": "zdj123",
+      "password": "54321",
+      "email": "zdj12@gmail.com",
+      "rol": "admin"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Carolina Zuñiga",
+      "address": "Lomas del Campestre",
+      "user": "whozcaro",
+      "password": "103029",
+      "email": "whozcaro12@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Cristian Leyva",
+      "address": "En donde matan al diablo",
+      "user": "leyva",
+      "password": "ley120",
+      "email": "leyva7@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Carlos Palomino",
+      "address": "un pueblito por hay",
+      "user": "shz1023",
+      "password": "09743",
+      "email": "shz19@gmail.com"
+    }
+  ],
+  "employees": [
+    {
+      "id": "2",
+      "name": "Alejandra Mejia",
+      "address": "Muy muy lejano",
+      "user": "alemj12",
+      "password": "09322m",
+      "email": "alemj90@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Gabriel Linares",
+      "address": "rancho viejo",
+      "user": "gbrch19",
+      "password": "rcho090v",
+      "email": "gbrl90@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Lucifer Medina",
+      "address": "Las profundidades",
+      "user": "lcm023",
+      "password": "89301mj",
+      "email": "local12@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Cremas Massaje",
+      "price": 450,
+      "description": "Crema de masaje para Spa café tostado"
+    },
+    {
+      "id": "2",
+      "name": "Exfoliante Facial",
+      "price": 50,
+      "description": "Exfoliante facila y corporal, ahoras de fruta hidratada"
+    },
+    {
+      "id": "3",
+      "name": "  Toallas faciales",
+      "price": 420,
+      "description": "Toallas faciales de microfibra para esteticistas"
+    },
+    {
+      "id": "4",
+      "name": "Abora Aceites",
+      "price": 550,
+      "description": "Aceites Snadalo, Citrico y Lavanda"
+    },
+    {
+      "id": "5",
+      "name": "Mascarilla facial",
+      "price": 240,
+      "description": "Macarilla cosmetica espatulas de cuchara"
+    },
+    {
+      "id": "6",
+      "name": "Sales refrescantes",
+      "price": 330,
+      "description": "Sales refrescantes efervecentes gel exfoliante para pies"
+    },
+    {
+      "id": "7",
+      "name": "EarthLite",
+      "price": 451,
+      "description": "Masaje reposacabezas cubierta- grado medico. ultra suave"
+    },
+    {
+      "id": "8",
+      "name": "Globlos de hielo",
+      "price": 200,
+      "description": "Globos de hielo rosa para faciales, 2 rodillos faciales para masaje de piel fria"
+    }
+  ],
+  "reservation": [
+    {
+      "id": "2",
+      "date": "2023/09/23",
+      "cost": 5000,
+      "idU": "2",
+      "nameU": "Simon",
+      "emailU": "simon@gmail.com",
+      "idP": "2",
+      "nameP": "Exfoliante Facial",
+      "priceP": "50",
+      "nameE": "Gabriel Linares",
+      "idE": "3"
+    },
+    {
+      "id": "f7RXmwH",
+      "date": "2023-08-17T06:00:00.000Z",
+      "cost": "90054",
+      "idU": null,
+      "nameU": "Inali",
+      "emailU": "DKAD",
+      "idP": null,
+      "nameP": "Plancha",
+      "priceP": 500,
+      "idE": null,
+      "nameE": "Juan"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.spacer{
+  flex: 1 1 auto;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+

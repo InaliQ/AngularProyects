@@ -1,0 +1,71 @@
+<h1>Modulo de Solicitudes</h1>
+
+
+<mat-divider></mat-divider>
+
+
+
+<div class="grid bm-8">
+<div class="col-12 ">
+  <table >
+    <thead>
+      <tr>
+        <th>ID reserva</th>
+        <th>Fecha</th>
+        <th>Costo</th>
+        <th>Usuario</th>
+        <th>Producto</th>
+        <th>Precio Producto</th>
+        <th>Empleado</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr
+      *ngFor="let reservation of reservation">
+        <td>{{ reservation.id }}</td>
+            <td>{{ reservation.date }}</td>
+            <td>{{ reservation.cost }}</td>
+            <td>{{ reservation.nameU }}</td>
+            <td>{{ reservation.nameP }}</td>
+            <td>{{ reservation.priceP }}</td>
+            <td>{{ reservation.nameE }}</td>
+            <td><button mat-fab color="accent"
+                        mat-fab
+                        color="warn"
+                        matTooltip="Seleccionar reservación"
+              (click)="selectRequest(reservation)">
+              <mat-icon>publish</mat-icon>
+            </button>
+    </tbody>
+  </table>
+
+  <div class="flex justify-content-between md:col-6">
+    <button mat-fab
+            color="warn"
+            matTooltip="Borrar cliente"
+            (click)="onDeleteRequest()">
+      <mat-icon>delete</mat-icon>
+    </button>
+        </div>
+</div>
+
+
+
+<form  [formGroup]="reservationsForms" (ngSubmit)="onSubmit()">
+<input  style="display: none;" formControlName="id" />
+<input  style="display: none;" formControlName="date" />
+<input  style="display: none;" formControlName="cost" />
+
+<input  style="display: none;" formControlName="idU" />
+<input  style="display: none;" formControlName="nameU" />
+<input  style="display: none;" formControlName="emailU" />
+
+<input  style="display: none;" formControlName="idP" />
+<input  style="display: none;" formControlName="nameP" />
+<input  style="display: none;" formControlName="priceP" />
+
+<input  style="display: none;" formControlName="idE" />
+<input  style="display: none;" formControlName="nameE" />
+</form>

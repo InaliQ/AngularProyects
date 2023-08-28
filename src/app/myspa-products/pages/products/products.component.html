@@ -1,0 +1,34 @@
+
+
+<h1>Productos para sesión</h1>
+<mat-divider></mat-divider>
+
+
+<div class="grid bm-8 pt-2">
+
+  <div *ngFor="let products of products"
+   class="col-12 sm:col-4 md:col-3 xl:col-2">
+
+   <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{products.name}}</mat-card-title>
+
+      <img class="products-imagen"  [src]="'assets/spa/' + products.id + '.jpg'" [alt]="products.name">
+
+    </mat-card-header>
+
+    <mat-card-content class="mt-2">
+      <strong>Price: </strong>
+
+      <h4>{{products.price}}$</h4>
+
+      <strong>Descripcion:</strong>
+      <p>{{products.description}}</p>
+    </mat-card-content>
+
+
+
+   </mat-card>
+
+  </div>
+</div>
